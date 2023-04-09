@@ -414,7 +414,7 @@
                 setTimeout(function(){
                     if(!$(document).find('.datepicker tbody').hasClass('with-return-button')){
                             $(document).find('.datepicker tbody .datepicker-cancel-return-date').parent().remove();
-                            $(document).find('.datepicker tbody').append('<tr><td class="datepicker-cancel-return-date">'+_this.settings.localization.datepicker_return_ticket_caption+'</td></tr>');
+                            // $(document).find('.datepicker tbody').append('<tr><td class="datepicker-cancel-return-date">'+_this.settings.localization.datepicker_return_ticket_caption+'</td></tr>');
                             $(document).find('.datepicker tbody').addClass('with-return-button');
                             $(document).find('.datepicker-cancel-return-date').click(function(){
                                 iconReturnDel.click()
@@ -882,7 +882,7 @@
                       dateDeparture.forEach(function(userItem) {
                           var myDate  = randomDate(new Date(),new Date(2023, 10, 5));
                           var clock = ('0' + myDate.getHours()).slice(-2)+ ':' + ('0' + myDate.getMinutes()).slice(-2)
-                          userItem.innerText = infoTicket[0] + ' (' + clock + ')';             
+                          userItem.innerText = infoTicket[0] + ' ' + clock;             
 
                         // console.log(userItem.innerText)
                     });
@@ -890,7 +890,7 @@
                         
                         var myDate  = randomDate(new Date(),new Date(2023, 10, 5));
                         var clock = ('0' + myDate.getHours()).slice(-2)+ ':' + ('0' + myDate.getMinutes()).slice(-2)
-                        userItem.innerText = infoTicket[1] + ' (' + clock + ')';             
+                        userItem.innerText = infoTicket[1] + ' ' + clock;             
                         // console.log(userItem.innerText)
                     });
                     colPassangers.forEach(function(userItem) {
