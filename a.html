@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="/images/LogoFav.svg" type="image/svg+xml">
+	<link rel="stylesheet" href="/boostrap/bootstrap-grid.css">
+
+	<!-- Подключаем Bootstrap CSS -->
+	<link rel="stylesheet" href="/boostrap/bootstrap.css">
+	<link rel="stylesheet" href="/boostrap/font-awesome.min.css">
+	<link rel="stylesheet" href="https://snipp.ru/cdn/selectize.js/0.12.6/dist/css/selectize.default.css">
+
+	<!-- Наши CSS файлы со стилями -->
+	<link rel="stylesheet" href="/main.css">
+	<link rel="stylesheet" href="/President.css">
+
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/css/selectize.default.min.css"
+		integrity="sha512-pTaEn+6gF1IeWv3W1+7X7eM60TFu/agjgoHmYhAfLEU8Phuf6JKiiE8YmsNC0aCgQv4192s4Vai8YZ6VNM6vyQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- префиксы  -->
+	<link rel="stylesheet prefetch"
+		href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/css/bootstrap-datepicker3.standalone.css">
+	<link rel="stylesheet" type="text/css" href="/style.css">
+
+	<!--подключаем js-скрипты-->
+	<script src="/js/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-dateFormat/1.0/jquery.dateFormat.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js"></script>
+
+	<!-- функции твиджета -->
+	<script src="/js/jquery.twidget.js?v_1207"></script>
+	<title>SPA-билеты</title>
+</head>
+<body>
+<div id="blue">
+	<!-- Навигационное поле -->
+	<nav class="navbar navbar-expand-lg navbar-color" style="list-style-type: none;text-transform: capitalize;">
+		<div class="container" style="color: #fff">
+			<div class="row">
+				<div class="logotype">
+					<a id="logo"
+						class="navbar-brand col-1 col-sm-7 col-md-4 offset-0 offset-sm-1 offse4t-md-1 offset-xl-1 offset-xxl-2"
+						href="#" style="color: #fff;">
+						<img src="/images/LOGO.svg" alt="">
+					</a>
+				</div>
+			</div>
+			<h5 class="offset-0 offset-sm-1 offset-md-4 offset-lg-2 offset-xl-1">
+				<div class="itd_profile">
+					<div href="#" class="btn btn-itd btn-lg d-flex justify-content-center">
+						<a class="cityIn" style="margin-right: 8px; margin-left: 20px; text-decoration: underline;"></a>
+						<a id="arrow" style="display: none; font-size: 32px;">&#8594;</a>
+						<a class="cityTo" style="display: none; text-decoration: underline;"></a>
+					</div>
+				</div>
+			</h5>
+		</div>
+</div>
+</div>
+</nav>
+</div>
+
+<!-- БАННЕР -->
+<div class="banner" style="padding-bottom: 80px;">
+	<div class="container">
+		<!-- ЛИНИЯ -->
+		<center style="margin-bottom: 30px; margin-top: -4px">
+			<hr class="divider my-1 text-center">
+		</center>
+
+		<div class="banner">
+			<div class="col-md-12">
+				<div class="imgM">
+					<img id="men" src="/images/Самолет.png" alt="l">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-8" style="z-index: 2;">
+					<h2 id="info">Дешёвые авиабилеты из Нижневартовска от 1 478
+						рублей, Информация о перелётах</h2>
+				</div>
+				<div class="col-12">
+					<h6 class="Zapolnit">Заполните форму, чтобы найти билет:</h6>
+					<h5 class="offset-0 offset-sm-1 offset-md-4 offset-lg-2 offset-xl-1">
+				</div>
+			</div>
+		</div>
+	</div>
+	<center>
+	<div class="twidCenter">
+			<div class="twidget-container" id="twidget"></div>
+			<div class="blog-slider slider1 visible " style="text-align: start;">
+				<div class="aMargin">
+					<div class="a">
+						<div class="blog-slider__wrp swiper-wrapper  TicketBlogNone  ">
+							<div class="blog-slider-ticket" style="margin-top: -20px;">
+								<div class="blog-slider__item swiper-slide">
+									<div class="blog-slider__img TicketBlogBlue "
+										style="box-shadow: 0px 0px 40px rgba(255, 255,255, 0.4);background-color: #3468F0; color: #fff; padding: 40px 50px;">
+										<div class="imgAvia imgMob" >
+											<img src="/images/UT.png"
+												style="border-radius: 20px; width: 35px; height: 35px;" alt="">
+												<div class="welcomeAvia">
+													Авиакомпания	
+												</div>
+											</div>
+										<div class="blog-slider__content TicketNone"
+											style="padding-top: 50px; padding-bottom: 30px;">
+											<h1>
+												<a class="cityIn" style="color: #fff;text-decoration: none;"></a>
+												<a id="" style="font-size: 40px;"> &#8594;</a>
+												<a class="cityTo" style="color: #fff;text-decoration: none;"></a>
+											</h1>
+										</div>
+										
+										<h1>
+											<h1 class="price price1">&#8381;</h1>
+											<div class="TicketDate">
+												<h5>Вылет: <span class="dateDeparture">не указано</span></h5>
+												<h5>Прилет: <span class="dateArrival">не указано</span></h5>
+												<h5><span class="colPassangers"></span></h5>
+											</div>
+										
+										</h1>
+										<div class="aa">
+											<div style="display: inline;">
+												<label class="switch switch1" style="float: left;">
+													<input type="checkbox">
+													<span class="slider sliderB1 round">
+													</span>
+												</label>
+												<h4 style="font-weight: 400; padding-left: 60px;">Багаж</h4>
+											</div>
+											<hr>
+											<center>
+													<div class="flightDurationNone">
+													<div style="margin-top: 10px;"
+														class="blog-slider__button buyTicket">
+														<a class="">КУПИТЬ БИЛЕТ</a>
+													</div>
+												</div>
+											</center>
+
+											<div class="blog-slider__text">
+											</div>
+											<div class="depart" style="margin-top: -10px;">
+												
+												<h5>Вылет:
+													<a class="dateDeparture"
+														style="color: #fff;text-decoration: none;">не указано
+													</a>
+												</h5>
+												<h5>Прилет: <a class="dateArrival"
+														style="color: #fff;text-decoration: none;">не указано</a></h5>
+												<h5><span class="colPassangers"></span></h5>
+											</div>
+										</div>
+
+									</div>
+									<div class="blog-slider__content TicketBlock">
+										<h1>
+											<div class="blog-slider__content">
+												<!-- КОМП ВЕРСИЯ -->
+												<a class="cityIn" style="color: #000;text-decoration: none;"></a>
+												<a id="arrow" style="font-size: 32px;color: #000;">&#8594;</a>
+												<a class="cityTo" style="color: #000;text-decoration: none;"></a>
+												<div class="imgAvia" style="display: inline; ">
+													<img src="/images/UT.png"
+														style="border-radius: 20px; width: 35px; height: 35px;" alt="">
+												
+													</div>
+											</div>
+										</h1>
+										<div class="blog-slider__text welcomeAvia">
+											Авиакомпания
+										</div>
+										<div class="blog-slider__button buyTicket buyTicket1">
+											<a class="">КУПИТЬ БИЛЕТ</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+
+</center>
+</div>
+
+<!-- ПРЕИМУЩЕСТВА САЙТА -->
+<div class="container-fluid d-flex h-100 justify-content-center ">
+	<div class="min-col">
+		<img src="/images/Iconly/free-icon-plane-ticket-3127176 1.svg" class="bilet" alt="">
+		<h6>САМЫЕ ДЕШЕВЫЕ БИЛЕТА</h6>
+	</div>
+	<div class="min-col">
+		<img src="/images/Iconly/free-icon-payment-method-1558085 1.svg" class="bilet" alt="">
+		<h6>ЛЕГКИЕ СПОСОБЫ ОПЛАТЫ</h6>
+	</div>
+	<div class="min-col last">
+		<img src="/images/Iconly/free-icon-job-search-2766922 1.svg" class="bilet" alt="">
+		<h6>БЫСТРЫЙ ПОИСК</h6>
+	</div>
+</div>
+<!-- БЛОК КОТОРЫЙ ПОЯВИТСЯ НА МОБ. УСТРОЙСТВАХ. ПО УМОЛЧАНИИ О СКРЫТ -->
+<center>
+	<div class="min-col lastNone">
+		<h6>БЫСТРЫЙ ПОИСК
+			<img src="/Iconly/free-icon-job-search-2766922 1.svg" class="bilet biletNone" alt="">
+		</h6>
+	</div>
+</center>
+</div>
+
+<br><br><br>
+
+<div id="GalHeader" class="offset-1 col-11">
+	<h4>Горячие направления <svg style="width: 50px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="" class="w-6 h-6">
+		<path stroke-linecap="round" stroke-linejoin="round" stroke="red" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
+		<path stroke-linecap="round" stroke-linejoin="round" stroke="red" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
+	  </svg>
+	  
+	</h4>
+</div>
+<!-- <div id="carusel" style="background-color: white; margin-top: 5%;">
+
+	<div class="container my-carousel">
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active"> -->
+					<div class="container">
+
+						<div class="row centered">
+							
+						<div class="col-12 col-sm-6 col-lg-4 col-xl-4 ">
+							<div class="aa">
+								<a>
+									<div class="blocksOne">
+											<h1>Сочи - Москва</h1>
+											<h2>Вылет 3 июля</h2>
+											<h6>от 6 000р</h6>
+										</div>
+								</a>
+							</div>
+						</div>
+						<div class="two col-12 col-sm-6 col-lg-4 col-xl-4 ">
+							<a>
+								<div class="blocksTwo">
+									<h1>Пермь - Санкт-Петербург</h1>
+									<h2>Вылет 26 июня</h2>
+									<h6>от 3 800р</h6>
+								</div>
+							</a>
+						</div>
+
+						<div class="third col-12 col-sm-6 col-lg-4 col-xl-4 ">
+							<a>
+								<div class="blocksThird">
+									<h1>Москва - Омск</h1>
+									<h2>Вылет 17 июля</h2>
+									<h6>от 5 500р</h6>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- 
+				<div class="carousel-item">
+					<div class="row centered">
+						<div class="col-12 col-sm-6 col-lg-4 col-xl-4 ">
+							<a>
+								<div class="blocksSixth">
+									<h1>Казань - Грозный</h1>
+									<h2>Вылет 24 июля</h2>
+									<h6>от 10 000р</h6>
+								</div>
+							</a>
+						</div>
+
+						<div class="two col-12 col-sm-6 col-lg-4 col-xl-4 ">
+							<a>
+								<div class="blocksFifth">
+									<h1>Сочи - Нижневартовск</h1>
+									<h2>Вылет 24 июля</h2>
+									<h6>от 11 500р</h6>
+								</div>
+							</a>
+						</div>
+						<div class="third col-12 col-sm-6 col-lg-4 col-xl-4 ">
+							<a>
+								<div class="blocksFourth">
+									<h1>Саратов - Сочи</h1>
+									<h2>Вылет 1 августа</h2>
+									<h6>от 8 000р</h6>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+					data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				</button>
+
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+					data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+</div> -->
+<div id="GalHeader" class="offset-1 col-11">
+	<h4>Президентский отдых<svg style="width: 50px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="" class="w-6 h-6">
+		<path stroke-linecap="round" stroke-linejoin="round" stroke="red" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
+		<path stroke-linecap="round" stroke-linejoin="round" stroke="red" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
+	  </svg>
+	  
+	</h4>
+</div>
+
+<div class="blog-slider">
+	<div class="aMargin">
+		<div class="a">
+			<div class="blog-slider__wrp swiper-wrapper ">
+				<div class="blog-slider__item swiper-slide">
+					<div class="blog-slider__img">
+						<img src="/images/Sochi.png" alt="">
+					</div>
+					<div class="blog-slider__content">
+						<h1>Сочи</h1>
+						<span class="blog-slider__code">Любимый зимний вид спорта Путина - лыжи. </span>
+						<div class="blog-slider__text">Его любимое место - Сочи. Еще до зимних Олимпийских игр 2014
+							года
+							он много раз ездил туда в 2000-е годы, пробуя новые склоны и встречаясь с
+							профессиональными
+							лыжниками и менеджерами курортов</div>
+						<div class="blog-slider__button OpenTicket Open1">
+							<a class="Nayti visible">НАЙТИ БИЛЕТ</a>
+						</div>
+
+						<div class="blog-slider__button OpenBlogs">
+							<a class="">А ГДЕ ЕЩЁ?</a>
+						</div>
+					</div>
+				</div>
+				<div class="blog-slider__wrp swiper-wrapper  TicketBlogNone1 visible ">
+					<hr style="margin-bottom: -10px; margin-top: 29px;">
+					<div class="blog-slider-ticket ">
+						<div class="blog-slider__item swiper-slide">
+							<div class="blog-slider__img TicketBlogBlue "
+								style="background-color: #3468F0; color: #fff; padding: 40px 50px;">
+								<div class="imgAvia imgMob">
+									<img src="/images/UT.png"
+										style="border-radius: 20px; width: 35px; height: 35px;" alt="">
+										<div class="welcomeAvia">
+											Авиакомпания	
+										</div>
+									</div>
+								<div class="blog-slider__content TicketNone"
+									style="padding-top: 50px; padding-bottom: 30px;">
+									<h1>
+										<a class="cityIn" style="color: #fff;text-decoration: none;"></a>
+										<a id="" style="font-size: 40px;"> &#8594;</a>
+										Сочи
+									</h1>
+								</div>
+								<h1>
+									<h1 class="price price2">&#8381;</h1>
+									<div class="TicketDate">
+										<h5>Вылет: <span class="dateDeparture">не указано</span></h5>
+										<h5>Прилет: <span class="dateArrival">не указано</span></h5>
+										<h5><span class="colPassangers"></span></h5>
+									</div>
+								</h1>
+								<div class="aa">
+									<div style="display: inline;">
+										<label class="switch switch2" style="float: left;">
+											<input type="checkbox">
+											<span class="slider slider2 round">
+											</span>
+										</label>
+										<h4 style="font-weight: 400; padding-left: 60px;">Багаж</h4>
+									</div>
+									<hr>
+									<center>
+										<div class="flightDurationNone">
+											<div style="margin-top: 10px;" class="blog-slider__button buyTicket">
+												<a class="">КУПИТЬ БИЛЕТ</a>
+											</div>
+										</div>
+									</center>
+									<div class="depart" style="margin-top: -10px;">
+										<h5>Вылет: <span class="dateDeparture">не указано</span></h5>
+										<h5>Прилет: <span class="dateArrival">не указано</span></h5>
+										<h5><span class="colPassangers"></span></h5>
+									</div>
+								</div>
+							</div>
+							<div class="blog-slider__content TicketBlock">
+								<h1>
+									<a class="cityIn" style="color: #000;text-decoration: none;"></a>
+									<a id="" style="font-size: 40px;">&#8594;</a>
+									Сочи
+									<div class="imgAvia" style="display: inline; ">
+										<img src="/images/UT.png"
+											style="border-radius: 20px; width: 35px; height: 35px;" alt="">
+									</div>
+								</h1>
+								<div class="blog-slider__text welcomeAvia">
+									Авиакомпания
+								</div>
+								<div class="blog-slider__button buyTicket">
+									<a class="">КУПИТЬ БИЛЕТ</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="">
+	<div class="a aNone visible">
+		<div class="blog-slider__item swiper-slide">
+			<div class="blog-slider__img">
+				<img src="images/Tiva.png" alt="">
+			</div>
+			<div class="blog-slider__content">
+				<h1>Республика Тыва</h1>
+				<span class="blog-slider__code">Любимое хобби Владимира Путина - рыбалка. </span>
+				<div class="blog-slider__text"> Во время подводной охоты на щуку к голове президента
+					была
+					пристегнута
+					камера "GoPro", и кадры от первого лица транслировались по национальному
+					телевидению. По
+					данным
+					Кремля, в тот день президент рыбачил несколько часов.</div>
+				<div class="blog-slider__button OpenTicket Open2">
+					<a class="visible">НАЙТИ БИЛЕТ</a>
+				</div>
+			</div>
+		</div>
+		<div class="blog-slider__wrp swiper-wrapper TicketBlogNone2  visible">
+			<hr style="margin-bottom: -10px; margin-top: 29px;">
+			<div class="blog-slider-ticket ">
+				<div class="blog-slider__item swiper-slide">
+					<div class="blog-slider__img TicketBlogBlue "
+						style="background-color: #3468F0; color: #fff; padding: 40px 50px;">
+						<div class="imgAvia imgMob">
+							<img src="/images/UT.png"
+								style="border-radius: 20px; width: 35px; height: 35px;" alt="">
+								<div class="welcomeAvia">
+									Авиакомпания	
+								</div>
+							</div>
+						<div class="blog-slider__content TicketNone" style="padding-top: 50px; padding-bottom: 30px;">
+							<h1>
+								<a class="cityIn Kizil" style="color: #fff;text-decoration: none;"></a>
+								<a id="" style="font-size: 40px;"> &#8594;</a>
+								Кызыл
+							</h1>
+						</div>
+						<h1>
+							<h1 class="price price3">&#8381;</h1>
+							<div class="TicketDate">
+								<h5>Вылет: <span class="dateDeparture">не указано</span></h5>
+								<h5>Прилет: <span class="dateArrival">не указано</span></h5>
+								<h5><span class="colPassangers"></span></h5>
+							</div>
+						</h1>
+						<div class="aa">
+							<div style="display: inline;">
+								<label class="switch switch3" style="float: left;">
+									<input type="checkbox">
+									<span class="slider slider3 round">
+									</span>
+								</label>
+								<h4 style="font-weight: 400; padding-left: 60px;">Багаж</h4>
+							</div>
+							<hr>
+							<center>
+								<div class="flightDurationNone">
+									<div style="margin-top: 10px;" class="blog-slider__button buyTicket">
+										<a class="">КУПИТЬ БИЛЕТ</a>
+									</div>
+								</div>
+							</center>
+							<div class="depart" style="margin-top: -10px;">
+								<h5>Вылет: <span class="dateDeparture">не указано</span></h5>
+								<h5>Прилет: <span class="dateArrival">не указано</span></h5>
+								<h5><span class="colPassangers"></span></h5>
+							</div>
+						</div>
+					</div>
+					<div class="blog-slider__content TicketBlock">
+						<h1>
+							<a class="cityIn" style="color: #000;text-decoration: none;"></a>
+							<a id="" style="font-size: 40px;">&#8594;</a>
+							Кызыл
+							<div class="imgAvia" style="display: inline; ">
+								<img src="/images/UT.png" style="border-radius: 20px; width: 35px; height: 35px;"
+									alt="">
+							</div>
+						</h1>
+						<div class="blog-slider__text welcomeAvia">
+							Авиакомпания
+						</div>
+						<div class="blog-slider__button buyTicket">
+							<a class="">КУПИТЬ БИЛЕТ</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="">
+	<div class="a aNone2 visible">
+		<div class="blog-slider__item swiper-slide">
+			<div class="blog-slider__img">
+				<img src="/images/scale_1200.png" alt="">
+			</div>
+			<div class="blog-slider__content">
+				<h1>Хакасия</h1>
+				<span class="blog-slider__code">Президент и министр обороны много ходят пешком и часто останавливаются,
+					чтобы насладиться первозданной красотой </span>
+				<div class="blog-slider__text">
+					Президент прибыл в Хакасию на юге Центральной России в 2018 году после саммита лидеров стран СНГ в
+					Душанбе. Он уехал в тайгу всего на один день. Была ли это сольная поездка или нет, в Кремле
+					комментировать не стали. После этого он вылетел прямо в Сочи на Гран-При Формулы-1.</div>
+				<div class="blog-slider__button OpenTicket Open3">
+					<a class="visible">НАЙТИ БИЛЕТ</a>
+				</div>
+			</div>
+		</div>
+		<div class="blog-slider__wrp swiper-wrapper TicketBlogNone3 visible ">
+			<div class="blog-slider-ticket ">
+				<hr style="margin-bottom: -10px; margin-top: 29px;">
+				<div class="blog-slider__item swiper-slide">
+					<div class="blog-slider__img TicketBlogBlue "
+						style="background-color: #3468F0; color: #fff; padding: 40px 50px;">
+						<div class="imgAvia imgMob" >
+							<img src="/images/UT.png"
+								style="border-radius: 20px; width: 35px; height: 35px;" alt="">
+								<div class="welcomeAvia">
+									Авиакомпания	
+								</div>
+							</div>
+						<div class="blog-slider__content TicketNone" style="padding-top: 50px; padding-bottom: 30px;">
+							<h1>
+								<a class="cityIn" style="color: #fff;text-decoration: none;"></a>
+								<a id="" style="font-size: 40px;"> &#8594;</a>
+								Абакан
+							</h1>
+						</div>
+						<h1>
+							<h1 class="price price4">&#8381;</h1>
+							<div class="TicketDate">
+								<h5>Вылет: <span class="dateDeparture">не указано</span></h5>
+								<h5>Прилет: <span class="dateArrival">не указано</span></h5>
+								<h5><span class="colPassangers"></span></h5>
+							</div>
+						</h1>
+						<div class="aa">
+							<div style="display: inline;">
+								<label class="switch switch4" style="float: left;">
+									<input type="checkbox">
+									<span class="slider slider4 round">
+									</span>
+								</label>
+								<h4 style="font-weight: 400; padding-left: 60px;">Багаж</h4>
+							</div>
+							<hr>
+							<center>
+								<div class="flightDurationNone">
+									<div style="margin-top: 10px;" class="blog-slider__button buyTicket">
+										<a class="">КУПИТЬ БИЛЕТ</a>
+									</div>
+								</div>
+							</center>
+							<div class="depart" style="margin-top: -10px;">
+								<h5>Вылет: <span class="dateDeparture">не указано</span></h5>
+								<h5>Прилет: <span class="dateArrival">не указано</span></h5>
+								<h5><span class="colPassangers"></span></h5>
+							</div>
+						</div>
+					</div>
+					<div class="blog-slider__content TicketBlock">
+						<h1>
+							<a class="cityIn" style="color: #000;text-decoration: none;"></a>
+							<a id="" style="font-size: 40px;">&#8594;</a>
+							Абакан
+							<div class="imgAvia" style="display: inline; ">
+								<img src="/images/UT.png" style="border-radius: 20px; width: 35px; height: 35px;"
+									alt="">
+							</div>
+						</h1>
+						<div class="blog-slider__text welcomeAvia">
+							Авиакомпания
+						</div>
+						<div class="blog-slider__button buyTicket">
+							<a class="">КУПИТЬ БИЛЕТ</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<!-- ФОРМА РАССЫЛКИ -->
+<form id="rassilka">
+	<div class="col-12">
+		<div class="container">
+			<div class="row">
+				<div class="col-11 col-md-12">
+					<div class="textFormRas">
+						<h4 class="text-center" id="podpishite">Подпишитесь на нашу рассылку</h4>
+						<center style="margin: 9px 0px -20px 0px;">
+							<span id="uznayte">Узнайте больше о наших акциях на билеты</span>
+						</center>
+					</div>
+				</div>
+				<div class="col-11 col-md-7 col-lg-7 col-xl-7">
+					<input id="email" type="text" class="form-control" placeholder="Эл. почта">
+				</div>
+				<div class="subscripBut col-11 col-md-4 col-lg-4 col-xl-4">
+					<button class="form-control subscripTEXT">Подписаться
+					</button>
+				</div>
+			</div>
+		</div>
+</form>
+</div>
+</div>
+
+
+<footer>
+	<div class="container">
+		<div class="row centered">
+			<div id="logoSoc" class="offset-4 offset-sm-0 col-6 col-sm-4 col-md-4 col-xl-3">
+				<a id="buv" class="navbar-brand col-md-4 col-sm-7 offset-xl-1 offset-sm-1 offset-md-1 offset-xxl-2"
+					href="#" style="color: #fff;">
+					<img src="/images/LOGO.svg" alt="">
+				</a>
+				<div class="SocNet400">
+					<div class="SocNet1 centered" style="font-size: 25px;margin-left: 50px;">
+						<img src="/images/Telegram App.svg" alt="">
+						<img src="/images/Twitter.svg" alt="">
+						<img src="/images/Tumblr.svg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="NavFoot country col-5 offset-1 offset-sm-1 offset-md-0 col-sm-4 col-md-4 col-xl-3">
+				<h4 style="cursor:default;">Лучшие страны</h4>
+				<div class="FontWeight500">
+					<h4>Казахстан</h4>
+					<h4>Узбекистан</h4>
+					<h4>Беларусь</h4>
+					<h4>Грузия</h4>
+				</div>
+			</div>
+
+			<!-- БЛОК КОТОРЫЙ ПОЯВИТСЯ НА МОБ. УСТРОЙСТВАХ. ПО УМОЛЧАНИИ О СКРЫТ -->
+			<div class="NavFoot countryNone col-12 col-sm-4 col-md-4 col-xl-3">
+				<div class="SocNet">
+					<img src="/images/Telegram App.svg" alt="">
+					<img src="/images/Twitter.svg" alt="">
+					<img src="/images/Tumblr.svg" alt="">
+				</div>
+
+				<h4 style="cursor:default;">Лучшие страны</h4>
+				<div class="FontWeight500">
+					<h4>Казахстан</h4>
+					<h4>Узбекистан</h4>
+					<h4>Беларусь</h4>
+					<h4>Грузия</h4>
+				</div>
+			</div>
+
+
+			<!-- БЛОК КОТОРЫЙ ПОЯВИТСЯ НА МОБ. УСТРОЙСТВАХ. ПО УМОЛЧАНИИ О СКРЫТ -->
+			<div class="NavFoot countryNone col-12 col-sm-4 col-md-4 col-xl-3">
+				<h4 style="cursor:default;">Лучшие города</h4>
+				<div class="FontWeight500">
+					<h4>Москва</h4>
+					<h4>Адлер</h4>
+					<h4>Лондон</h4>
+					<h4>Бишкек</h4>
+				</div>
+			</div>
+
+			<div class="NavFoot city offset-1 offset-sm-0 col-5 col-sm-3 col-md-4 col-lg-4 col-xl-3">
+				<h4 style="cursor:default;">Лучшие города</h4>
+				<div class="FontWeight500">
+					<h4>Москва</h4>
+					<h4>Адлер</h4>
+					<h4>Лондон</h4>
+					<h4>Бишкек</h4>
+				</div>
+			</div>
+
+			<div class="col-3 col-sm-12 col-md-4 col-lg-4 col-xl-3">
+				<div class="SocNet2">
+					<h4>Наши Социальные сети</h4>
+					<div class="centered" style="font-size: 35px;margin: -20px 50px 0px 0px; text-align: center;">
+						<img src="/images/Telegram App.svg" alt="">
+						<img src="/images/Twitter.svg" alt="">
+						<img src="/images/Tumblr.svg" alt="">
+					</div>
+				</div>
+			</div>
+			<center style="margin-bottom: -3%; margin-top: 20px;">
+				<hr style="color: #fff;" class="divider my-1 text-center" />
+			</center>
+			<center style="margin-bottom: 3%;">
+				<h5>&#169; 2020 АЛЕЙДАВИА</h5>
+			</center>
+		</div>
+	</div>
+	</div>
+</footer>
+
+
+<!-- ФОРМА РЕГИСТРАЦИИ, ПОЯВИТСЯ ПОСЛЕ КЛИКА НА КНОПКУ "ВОЙТИ" -->
+<div class="popup">
+	<div class="popup__container">
+		<div class="popup__wrapper">
+			<div id="authentication">
+				<center>
+					<div class="logotype" style="margin-top: -20px;">
+						<a id="logo">
+							<img src="/images/LOGO_BLUE.svg" alt="">
+						</a>
+					</div>
+				</center>
+				<center>
+					<h5 style="font-size: 23px;font-weight: 500; margin-top: -1px; margin-bottom: 10px;">
+						Откуда вас доставить?
+					</h5>
+					<h5 style="font-size: 17px;font-weight: 400; color: gray;">
+						Выберите город, чтобы увидеть варианты полётов
+					</h5>
+				</center>
+				</div>
+		</div>
+		<select class="js-selectize" name="city">
+			<option value="">Нижневартовск</option>
+		</select>
+		<button type="submit" class="regist begin">Продолжить</button>
+	</div>
+</div>
+
+<div class="popup popupBuy visible">
+	<div class="popup__containerInfo">
+		<div class="popup__wrapper">
+			<div id="authentication">
+				<br>
+				<center>
+					<h5 style="font-size: 23px;font-weight: 500; margin-top: -30px; margin-bottom: 20px;">Личные данные
+					</h5>
+				</center>
+				<br>
+				<span class="delete"></span>
+
+				<input type="text" class="emailF fio" placeholder="ФИО (на кириллице)" name="textReq"
+					style="margin-bottom: 20px;" pattern="[A-Z]">
+				<input type="date" class="emailF birthday" placeholder="Дата рождения" name="textReq"
+					style="margin-bottom: 20px;">
+
+
+				<div class="reating-arkows imagexplains" style="margin-bottom: 20px;">
+					<input id="d" type="checkbox">
+					<label for="d">
+						<div class="trianglesusing gender" data-checked="Мужчина" data-unchecked="Женщина"></div>
+						<div class="moresharpened"></div>
+					</label>
+				</div>
+
+				<input type="text" class="emailF passport" placeholder="Серия и номер паспорта" name="textReq"
+					style="margin-bottom: 20px;">
+
+<!-- 
+				<input type="email" class="emailF email" placeholder="Введите эл. почту" name="textReq" maxlength="40"
+					style="margin-bottom: 20px;"> -->
+
+				<br>
+				<button type="button" class="send" style="margin-bottom: 20px;">ОТПРАВИТЬ</button>
+				<center>
+
+					<h2><span id="colPasDef">
+							1
+						</span>
+						/
+						<span id="colPas"></span>
+					</h2>
+				</center>
+
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="popup popupBuy2 visible">
+	<div class="popup__containerInfo">
+		<div class="popup__wrapper">
+			<div id="authentication">
+				<br>
+				<center>
+					<h5 style="font-size: 23px;font-weight: 500; margin-top: -30px; margin-bottom: 20px;">Покупка билета
+					</h5>
+				</center>
+				<br>
+				<span class="delete"></span>
+				<form>
+					<input type="text" class="emailF card" placeholder="Номер карты" name="textReq"
+						style="margin-bottom: 20px;" required>
+						<input type="text" class="emailF srok" placeholder="ММ / ГГ" name="textReq" maxlength="4"
+						style="margin-bottom: 20px;" required>
+						<input type="text" class="emailF cvc" placeholder="CVV / CVC" name="textReq" maxlength="3"
+						style="margin-bottom: 20px;" required>
+						<center>
+						<hr style="padding:0; width: 50%; border: 1px solid#3368EF;">	
+						</center>
+						<input type="email" class="emailF emailValue" placeholder="Введите почту" name="textReq"
+							style="margin-bottom: 20px;" required>
+						<!-- <br> -->
+					<button type="submit" class="buy send " style="margin-bottom: 20px;">ОПЛАТИТЬ</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="popup3 visible">
+	<button type="submit" class="error2 ">Заполните поля</button>
+</div>
+<div class="popup2 visible">
+	<button type="submit" class="error visible">Выберите другой город</button>
+	<button type="submit" class="error2 visible">Выберите другой город</button>
+	<div class="popup__container">
+		<div class="popup__wrapper">
+			<div id="authentication2">
+				<center>
+					<div class="logotype" style="margin-top: -20px;">
+						<a id="logo">
+							<img src="/images/LOGO_BLUE.svg" alt="">
+						</a>
+					</div>
+				</center>
+				<center>
+					<h5 style="font-size: 23px;font-weight: 500; margin-top: -1px; margin-bottom: 10px;">
+						Куда вас доставить?
+					</h5>
+					<h5 style="font-size: 17px;font-weight: 400; color: gray;">
+						Выберите город, чтобы увидеть варианты полётов
+					</h5>
+				</center>
+				<div class="Textform">
+				</div>
+			</div>
+		</div>
+		<select class="js-selectize select2" name="city">
+			<option value="">Нижневартовск</option>
+		</select>
+		<button type="submit" class="regist end">Продолжить</button>
+	</div>
+</div>
+
+
+<link rel="stylesheet" href="https://snipp.ru/cdn/selectize.js/0.12.6/dist/css/selectize.default.css">
+<script src="https://snipp.ru/cdn/microplugin.js/src/microplugin.js"></script>
+<script src="https://snipp.ru/cdn/sifter.js/sifter.min.js"></script>
+<script src="https://snipp.ru/cdn/selectize.js/0.12.6/dist/js/selectize.min.js"></script>
+<script src="https://snipp.ru/cdn/maskedinput/jquery.maskedinput.min.js"></script>
+<script src="https://cdn.jsdelivr.net/lodash/4.10.0/lodash.js"></script>
+
+<script>
+	
+function randomDate(start, end) {
+  return new Date(start.getTime() 
+          + Math.random() * (end.getTime() - start.getTime()));
+}
+ 
+var myDate  = randomDate(new Date(),new Date(2023, 10, 5));
+var clock = ('0' + myDate.getHours()).slice(-2)+ ':' + ('0' + myDate.getMinutes()).slice(-2)
+
+   $(".passport").click(function () {
+		$(this).setCursorPosition(1);
+	}).mask('99-99 999999');
+
+	$(".card").click(function () {
+		$(this).setCursorPosition(1);
+	}).mask("9999 9999 9999 9999");
+
+
+	$(".cvc").click(function () {
+		$(this).setCursorPosition(3);
+	}).mask("999");
+
+	$(".srok").click(function () {
+		$(this).setCursorPosition(1);
+	}).mask("99/99");
+
+
+	const massivCity = {};
+	fetch('https://raw.githubusercontent.com/pensnarik/russian-cities/master/russian-cities.json')
+		.then(function (response) {
+			return response.json();
+		})
+		.then(function (data) {
+			for (let i = 0; i < data.length; i++) {
+				massivCity[i] = data[i].name;
+				$('.js-selectize').append('<option value="' + i + '">' + massivCity[i] + '</option>');
+			}
+			$(document).ready(function () {
+				$('.js-selectize').selectize();
+			});
+		})
+	.catch(function (error) {
+		console.log(error);
+	});
+
+	$('#twidget').twidget({
+		locale: 'ru',
+		marker: 78606,
+		type: 'avia'
+	});
+
+
+	const button = document.querySelector('.itd_profile');
+	const cityIn = document.querySelectorAll('.cityIn');
+	const cityTo = document.querySelectorAll('.cityTo');
+	const form = document.querySelector('#authentication');
+	const popup = document.querySelector('.popup');
+	const popup2 = document.querySelector('.popup2');
+	const continueB = document.querySelector('.begin');
+	const endB = document.querySelector('.end');
+	const blogPutin = document.querySelector('.aNone');
+	const blogPutin2 = document.querySelector('.aNone2');
+	const knopkaOpen = document.querySelector('.OpenBlogs');
+	const Open1 = document.querySelector('.Open1');
+	const Open2 = document.querySelector('.Open2');
+	const Open3 = document.querySelector('.Open3');
+	const Ticket0 = document.querySelector('.TicketBlogNone');
+	const Ticket = document.querySelector('.TicketBlogNone1');
+	const Ticket2 = document.querySelector('.TicketBlogNone2');
+	const Ticket3 = document.querySelector('.TicketBlogNone3');
+	const Kizil = document.querySelector('.Kizil');
+	const sliderB1 = document.querySelector('.sliderB1');
+	const sliderB2 = document.querySelector('.slider2');
+	const sliderB3 = document.querySelector('.slider3');
+	const sliderB4 = document.querySelector('.slider4');
+	const popupBuy = document.querySelector('.popupBuy');
+	const popupBuy2 = document.querySelector('.popupBuy2');
+	const buyTicket = document.querySelectorAll('.buyTicket');
+	const buyTicket1 = document.querySelector('.buyTicket1');
+	const delete1 = document.querySelectorAll('.delete');
+	const send = document.querySelector('.send');
+	const buy = document.querySelector('.buy');
+	const birthday = document.querySelector('.birthday');
+	const gender = document.querySelector('.gender');
+	const passport = document.querySelector('.passport');
+	// const email = document.querySelector('.email');
+	const colPasDef = document.querySelector('#colPasDef');
+	const knopkaClose = document.querySelector('.CloseBlogs');
+	const Textform = document.querySelector('.Textform');
+	const knopkaError = document.querySelector('.error');
+	const price = document.querySelectorAll('.price');
+	const price1 = document.querySelector('.price1');
+	const price2 = document.querySelector('.price2');
+	const price3 = document.querySelector('.price3');
+	const price4 = document.querySelector('.price4');
+	const emailValue = document.querySelector('.emailValue');
+	const imgAvia = document.querySelectorAll('.imgAvia img');
+
+	const fio = document.querySelector('.fio');
+	const SexChoice = document.querySelector('.reating-arkows');
+	fio.addEventListener('keypress', (e) => {
+		var val = fio.value + e.key;
+		if (val.split(" ").length == 4) e.preventDefault();
+		var keyCode = e.keyCode || e.which; // Код символа
+		if (!/[aA-zZ ]/.test(String.fromCharCode(keyCode)) // Проверка на разрешённые символы
+			|| (/[ ]/.test(input.value) && keyCode === 32)) // Проверка на количество пробелов
+			e.preventDefault(); // Если условие выполнилось, то запрещаем ввод символа
+	});
+
+	gender.addEventListener('click', () => {
+		if (gender.value == 'Мужчина') {
+			gender.value = 'Женщина';
+		} else if (gender.value == 'Женщина') {
+			gender.value = 'Мужчина';
+		}
+	});
+
+	const colPas = document.querySelector('#colPas');
+
+	Open1.addEventListener('click', () => {
+		Ticket.classList.remove('visible');
+	});
+	Open2.addEventListener('click', () => {
+		Ticket2.classList.remove('visible');
+	});
+	Open3.addEventListener('click', () => {
+		Ticket3.classList.remove('visible');
+	});
+
+	buy.addEventListener('click', () => {
+		popupBuy2.classList.add('visible');
+	});
+
+
+	// Первый блок под формой
+	var TicketJSON1 = {AviaCompany:'', price: '', departure: '', arrival: '', numberPassengers: '', fromCity: '', inCity: '' }
+	buyTicket[1].addEventListener('click', () => {
+		let array0 = Ticket0.innerText.replace(/(\t\r\n|\n|\r)/gm, " ").split(/[\s ]/);
+		array0 = array0.filter(function (el) {
+			return (el != null && el != "" || el === 0);
+		});
+		var price = array0[0] + ' рублей';
+		var timeDep = array0[3]+' ' +array0[4]+' ' +array0[5]+ ' ' +array0[6]+' ' +array0[7]
+		var timeArr = array0[8]+' ' +array0[9]+' ' +array0[10]+' ' +array0[11]+' ' +array0[12]
+		var FromCity =  array0[16]
+		var InCity =  array0[18]
+		var PassanCol=  array0[13]+' ' +array0[14]+' ' +array0[15]
+		var AviaCompany=  array0[19]
+
+		TicketJSON1.price = price;
+		TicketJSON1.departure = timeDep;
+		TicketJSON1.arrival = timeArr;
+		TicketJSON1.numberPassengers = PassanCol;
+		TicketJSON1.fromCity = FromCity;
+		TicketJSON1.inCity = InCity;
+		TicketJSON1.AviaCompany = AviaCompany;
+		console.log(array0)
+		popupBuy.classList.remove('visible');
+	});
+
+	// Первый блок под формой МОБ ВЕРСИЯ
+	var TicketJSON1 = { price: '', departure: '', arrival: '', numberPassengers: '', fromCity: '', inCity: '' }
+	buyTicket[0].addEventListener('click', () => {
+		let array0 = Ticket0.innerText.replace(/(\t\r\n|\n|\r)/gm, " ").split(/[\s ]/);
+		array0 = array0.filter(function (el) {
+			return (el != null && el != "" || el === 0);
+		});
+		var price = array0[4] + ' рублей';
+		var timeDep = array0[6]+' ' +array0[7]+ ' ' +array0[8]+' ' +array0[9]+array0[10]
+		var timeArr = array0[11]+' ' +array0[12]+' ' +array0[13]+' ' +array0[14]+' ' +array0[15]
+		var FromCity =  array0[1]
+		var InCity =  array0[3]
+		var PassanCol=  array0[16]+' ' +array0[17]+' ' +array0[18]
+		var AviaCompany=  array0[0]
+
+		TicketJSON1.price = price;
+		TicketJSON1.departure = timeDep;
+		TicketJSON1.arrival = timeArr;
+		TicketJSON1.numberPassengers = PassanCol;
+		TicketJSON1.fromCity = FromCity;
+		TicketJSON1.inCity = InCity;
+		TicketJSON1.AviaCompany = AviaCompany;
+		console.log(array0)
+		popupBuy.classList.remove('visible');
+	});
+
+	// первый блок СОЧИ ПУТИН МОБ ВЕРСИЯ
+	var TicketJSON1 = { price: '', departure: '', arrival: '', numberPassengers: '', fromCity: '', inCity: '' }
+	buyTicket[2].addEventListener('click', () => {
+		let array0 = Ticket.innerText.replace(/(\t\r\n|\n|\r)/gm, " ").split(/[\s ]/);
+		array0 = array0.filter(function (el) {
+			return (el != null && el != "" || el === 0);
+		});
+		var price = array0[4] + ' рублей';
+		var timeDep = array0[6]+' ' +array0[7]+ ' ' +array0[8]+' ' +array0[9]+array0[10]
+		var timeArr = array0[11]+' ' +array0[12]+' ' +array0[13]+' ' +array0[14]+' ' +array0[15]
+		var FromCity =  array0[1]
+		var InCity =  array0[3]
+		var PassanCol=  array0[16]+' ' +array0[17]+' ' +array0[18]
+		var AviaCompany=  array0[0]
+
+		TicketJSON1.price = price;
+		TicketJSON1.departure = timeDep;
+		TicketJSON1.arrival = timeArr;
+		TicketJSON1.numberPassengers = PassanCol;
+		TicketJSON1.fromCity = FromCity;
+		TicketJSON1.inCity = InCity;
+		TicketJSON1.AviaCompany = AviaCompany;
+		console.log(array0)
+		popupBuy.classList.remove('visible');
+	});
+
+	// первый блок СОЧИ ПУТИН
+	var TicketJSON1 = { price: '', departure: '', arrival: '', numberPassengers: '', fromCity: '', inCity: '' }
+	buyTicket[3].addEventListener('click', () => {
+		let array0 = Ticket.innerText.replace(/(\t\r\n|\n|\r)/gm, " ").split(/[\s ]/);
+		array0 = array0.filter(function (el) {
+			return (el != null && el != "" || el === 0);
+		});
+		var price = array0[0] + ' рублей';
+		var timeDep = array0[3]+' ' +array0[4]+' ' +array0[5]+ ' ' +array0[6]+' ' +array0[7]
+		var timeArr = array0[8]+' ' +array0[9]+' ' +array0[10]+' ' +array0[11]+' ' +array0[12]
+		var FromCity =  array0[16]
+		var InCity =  array0[18]
+		var PassanCol=  array0[13]+' ' +array0[14]+' ' +array0[15]
+		var AviaCompany=  array0[19]
+
+		TicketJSON1.price = price;
+		TicketJSON1.departure = timeDep;
+		TicketJSON1.arrival = timeArr;
+		TicketJSON1.numberPassengers = PassanCol;
+		TicketJSON1.fromCity = FromCity;
+		TicketJSON1.inCity = InCity;
+		TicketJSON1.AviaCompany = AviaCompany;
+		console.log(array0)
+		popupBuy.classList.remove('visible');
+	});
+
+	// второй блок КЫЗЫЛ ПУТИН МОБ ВЕРСИЯ
+	var TicketJSON1 = { price: '', departure: '', arrival: '', numberPassengers: '', fromCity: '', inCity: '' }
+	buyTicket[4].addEventListener('click', () => {
+		let array0 = Ticket2.innerText.replace(/(\t\r\n|\n|\r)/gm, " ").split(/[\s ]/);
+		array0 = array0.filter(function (el) {
+			return (el != null && el != "" || el === 0);
+		});
+		var price = array0[4] + ' рублей';
+		var timeDep = array0[6]+' ' +array0[7]+ ' ' +array0[8]+' ' +array0[9]+array0[10]
+		var timeArr = array0[11]+' ' +array0[12]+' ' +array0[13]+' ' +array0[14]+' ' +array0[15]
+		var FromCity =  array0[1]
+		var InCity =  array0[3]
+		var PassanCol=  array0[16]+' ' +array0[17]+' ' +array0[18]
+		var AviaCompany=  array0[0]
+
+		TicketJSON1.price = price;
+		TicketJSON1.departure = timeDep;
+		TicketJSON1.arrival = timeArr;
+		TicketJSON1.numberPassengers = PassanCol;
+		TicketJSON1.fromCity = FromCity;
+		TicketJSON1.inCity = InCity;
+		TicketJSON1.AviaCompany = AviaCompany;
+		console.log(array0)
+		popupBuy.classList.remove('visible');
+	});
+
+
+	// второй блок КЫЗЫЛ ПУТИН
+	var TicketJSON1 = { price: '', departure: '', arrival: '', numberPassengers: '', fromCity: '', inCity: '' }
+	buyTicket[5].addEventListener('click', () => {
+		let array0 = Ticket2.innerText.replace(/(\t\r\n|\n|\r)/gm, " ").split(/[\s ]/);
+		array0 = array0.filter(function (el) {
+			return (el != null && el != "" || el === 0);
+		});
+		var price = array0[0] + ' рублей';
+		var timeDep = array0[3]+' ' +array0[4]+' ' +array0[5]+ ' ' +array0[6]+' ' +array0[7]
+		var timeArr = array0[8]+' ' +array0[9]+' ' +array0[10]+' ' +array0[11]+' ' +array0[12]
+		var FromCity =  array0[16]
+		var InCity =  array0[18]
+		var PassanCol=  array0[13]+' ' +array0[14]+' ' +array0[15]
+		var AviaCompany=  array0[19]
+
+		TicketJSON1.price = price;
+		TicketJSON1.departure = timeDep;
+		TicketJSON1.arrival = timeArr;
+		TicketJSON1.numberPassengers = PassanCol;
+		TicketJSON1.fromCity = FromCity;
+		TicketJSON1.inCity = InCity;
+		TicketJSON1.AviaCompany = AviaCompany;
+		console.log(array0)
+		popupBuy.classList.remove('visible');
+	});
+
+	// третий блок АБАКАН ПУТИН МОБ ВЕРСИЯ
+	var TicketJSON1 = { price: '', departure: '', arrival: '', numberPassengers: '', fromCity: '', inCity: '' }
+	buyTicket[6].addEventListener('click', () => {
+	let array0 = Ticket3.innerText.replace(/(\t\r\n|\n|\r)/gm, " ").split(/[\s ]/);
+	array0 = array0.filter(function (el) {
+			return (el != null && el != "" || el === 0);
+		});
+		var price = array0[4] + ' рублей';
+		var timeDep = array0[6]+' ' +array0[7]+ ' ' +array0[8]+' ' +array0[9]+array0[10]
+		var timeArr = array0[11]+' ' +array0[12]+' ' +array0[13]+' ' +array0[14]+' ' +array0[15]
+		var FromCity =  array0[1]
+		var InCity =  array0[3]
+		var PassanCol=  array0[16]+' ' +array0[17]+' ' +array0[18]
+		var AviaCompany=  array0[0]
+
+		TicketJSON1.price = price;
+		TicketJSON1.departure = timeDep;
+		TicketJSON1.arrival = timeArr;
+		TicketJSON1.numberPassengers = PassanCol;
+		TicketJSON1.fromCity = FromCity;
+		TicketJSON1.inCity = InCity;
+		TicketJSON1.AviaCompany = AviaCompany;
+		console.log(array0)
+		popupBuy.classList.remove('visible');
+
+	});
+
+	// третий блок АБАКАН ПУТИН
+	var TicketJSON1 = { price: '', departure: '', arrival: '', numberPassengers: '', fromCity: '', inCity: '' }
+	buyTicket[7].addEventListener('click', () => {
+		let array0 = Ticket3.innerText.replace(/(\t\r\n|\n|\r)/gm, " ").split(/[\s ]/);
+		array0 = array0.filter(function (el) {
+			return (el != null && el != "" || el === 0);
+		});
+		var price = array0[0] + ' рублей';
+		var timeDep = array0[3]+' ' +array0[4]+' ' +array0[5]+ ' ' +array0[6]+' ' +array0[7]
+		var timeArr = array0[8]+' ' +array0[9]+' ' +array0[10]+' ' +array0[11]+' ' +array0[12]
+		var FromCity =  array0[16]
+		var InCity =  array0[18]
+		var PassanCol=  array0[13]+' ' +array0[14]+' ' +array0[15]
+		var AviaCompany=  array0[19]
+
+		TicketJSON1.price = price;
+		TicketJSON1.departure = timeDep;
+		TicketJSON1.arrival = timeArr;
+		TicketJSON1.numberPassengers = PassanCol;
+		TicketJSON1.fromCity = FromCity;
+		TicketJSON1.inCity = InCity;
+		TicketJSON1.AviaCompany = AviaCompany;
+		console.log(array0)
+		popupBuy.classList.remove('visible');
+	});
+
+	
+
+	var defaultCountPas = 1;
+	var InfoPassengers = [];
+	const gender0 = document.querySelector('.trianglesusing');
+	var count=1;
+	var genderValue='M'
+	gender0.addEventListener('click', () => {
+		count++;
+		if (count%2==0) {
+			genderValue='Мужчина'
+			console.log(genderValue);
+		}else{
+			genderValue='Женщина'
+			console.log(genderValue);
+		}
+
+		// console.log(gender0.attributes)
+	})
+	
+		send.addEventListener('click', () => {
+			
+			var massivInfoPassengers = { Info: { Number: '', FullName: '', Birthday: '', Gender: '', Passport: ''}, };
+			// gender.value = genderValue;
+
+			// if (gender.value == undefined) {
+			// 	gender.value = 'Мужчина';
+			// }
+			if (defaultCountPas <= colPas.innerText) {
+				massivInfoPassengers.Info.Number = defaultCountPas;
+				massivInfoPassengers.Info.FullName = fio.value;
+				massivInfoPassengers.Info.Birthday = birthday.value;
+				massivInfoPassengers.Info.Passport = passport.value
+				massivInfoPassengers.Info.Gender = genderValue
+				// massivInfoPassengers.Info.Email = email.value;
+				var copy = massivInfoPassengers;
+				InfoPassengers.push({Passangers:copy})
+
+				fio.value = '';
+				birthday.value = '';
+				gender.value = '';
+				passport.value = '';
+				// email.value = '';
+				
+				
+				defaultCountPas++;
+				if (defaultCountPas <= colPas.innerText) {
+					colPasDef.innerText = defaultCountPas;
+				}
+			}
+			if (defaultCountPas > colPas.innerText) {
+				popupBuy.classList.add('visible');
+				popupBuy2.classList.remove('visible');
+				defaultCountPas = 1;
+				colPasDef.innerText = defaultCountPas;
+				var InfPas = InfoPassengers;
+				var massa = {InfoPassengers};
+				console.log(TicketJSON1);
+				_.merge(massa, TicketJSON1);
+				console.log(massa);
+				
+				
+			}
+		});
+		
+		buy.addEventListener('click', () => {
+		console.log(emailValue.value)
+		})
+		
+	buyTicket1.addEventListener('click', () => {
+		popupBuy.classList.remove('visible');
+	});
+
+	delete1[0].addEventListener('click', () => {
+		popupBuy.classList.add('visible');
+		popupBuy2.classList.add('visible');
+	});
+	delete1[1].addEventListener('click', () => {
+		popupBuy.classList.add('visible');
+		popupBuy2.classList.add('visible');
+	});
+
+	
+	function randomInteger(min, max) {
+		// получить случайное число от (min-0.5) до (max+0.5)
+		let rand = min - 0.5 + Math.random() * (max - min + 1);
+		return Math.round(rand);
+	}
+
+	const welcomeAvia = document.querySelectorAll('.welcomeAvia');
+	var imgStop = 0;
+	var massivCompany = ['UT', 'N4', 'SU', 'U6', 'DP', 'S7', '5N']
+	var i = 0;
+	imgAvia.forEach(function (img) {
+		var imgBlock = randomInteger(0, 6);
+		$(img).attr('src', '/images/' + (massivCompany[imgBlock]) + '.png')
+
+		// welcomeAvia.forEach(function (avia) {
+		if (imgBlock == 0) {
+			welcomeAvia[i].innerText = 'Utair';
+		}
+		else if (imgBlock == 1) {
+			welcomeAvia[i].innerText = 'Северный_Ветер_(Nordwind_Airlines)';
+		}
+		else if (imgBlock == 2) {
+			welcomeAvia[i].innerText = 'Аэрофлот';
+		}
+		else if (imgBlock == 3) {
+			welcomeAvia[i].innerText = 'Уральские_авиалинии';
+		}
+		else if (imgBlock == 4) {
+			welcomeAvia[i].innerText = 'Победа';
+		}
+		else if (imgBlock == 5) {
+			welcomeAvia[i].innerText = 'S7_Airlines';
+		}
+		else if (imgBlock == 6) {
+			welcomeAvia[i].innerText = 'Smartavia';
+		}
+		i++
+	});
+
+	continueB.addEventListener('click', () => {
+		popup2.classList.remove('visible');
+		var cityText = $(".selectize-input .item").text();
+		if (cityText == '') {
+			cityIn.forEach(function (city) {
+				city.innerText = "Нижневартовск";
+			});
+		} else {
+			cityIn.forEach(function (city) {
+				city.innerText = cityText;
+			});
+		}
+		knopkaOpen.addEventListener('click', () => {
+			if (cityText != "Абакан") {
+				blogPutin2.classList.remove('visible');
+			}
+			if (cityText != "Кызыл") {
+				blogPutin.classList.remove('visible');
+			}
+			if (cityText == "Сочи") {
+				Open1.classList.add('visible');
+			}
+			knopkaOpen.classList.add('visible');
+		});
+
+		endB.addEventListener('click', () => {
+			var cityText2 = $(".select2 .selectize-input .item").text();
+			if (cityText2 == '') {
+				if (cityText == cityText2) {
+					knopkaError.classList.remove('visible');
+				} else {
+					popup2.classList.add('visible');
+					popup.classList.add('visible');
+					cityTo.forEach(function (city) {
+						city.innerText = "Нижневартовск";
+					});
+				}
+			}
+			else {
+				if (cityText == cityText2) {
+					knopkaError.classList.remove('visible');
+				} else {
+					popup2.classList.add('visible');
+					popup.classList.add('visible');
+					cityTo.forEach(function (city) {
+						city.innerText = cityText2;
+					});
+				}
+			}
+		});
+		function randomInteger(min, max) {
+			let rand = min - 0.5 + Math.random() * (max - min + 1);
+			return Math.round(rand);
+		}
+
+		price.forEach(function (price1) {
+			price1.innerText = randomInteger(3000, 11000);
+			price1.innerHTML += '  &#8381;';
+			price1.value = String(price1.innerText)
+		});
+	});
+
+	var sumBagage = randomInteger(2500, 3700);
+	sliderB1.addEventListener('click', () => {
+		var a = $(" .switch1 input").attr('checked');
+		console.log(a)
+		if (a == undefined) {
+			var sumTicket = parseInt(price1.innerText) + sumBagage;
+			price1.innerText = String(sumTicket);
+			price1.innerHTML += '  &#8381;';
+		}
+		else {
+			var sumTicket = parseInt(price1.innerText) - sumBagage;
+			price1.innerText = String(sumTicket);
+			price1.innerHTML += '  &#8381;';
+		}
+	});
+
+	var sumBagage2 = randomInteger(2500, 3700);
+	sliderB2.addEventListener('click', () => {
+		var a = $(" .switch2 input").attr('checked');
+		console.log(a)
+		if (a == undefined) {
+			var sumTicket = parseInt(price2.innerText) + sumBagage2;
+			price2.innerText = String(sumTicket);
+			price2.innerHTML += '  &#8381;';
+		}
+		else {
+			var sumTicket = parseInt(price2.innerText) - sumBagage2;
+			price2.innerText = String(sumTicket);
+			price2.innerHTML += '  &#8381;';
+		}
+	});
+
+	var sumBagage3 = randomInteger(2500, 3700);
+	sliderB3.addEventListener('click', () => {
+		var a = $(" .switch3 input").attr('checked');
+		if (a == undefined) {
+			var sumTicket = parseInt(price3.innerText) + sumBagage3;
+			price3.innerText = String(sumTicket);
+			price3.innerHTML += '  &#8381;';
+		}
+		else {
+			var sumTicket = parseInt(price3.innerText) - sumBagage3;
+			price3.innerText = String(sumTicket);
+			price3.innerHTML += '  &#8381;';
+		}
+	});
+	var sumBagage4 = randomInteger(2500, 3700);
+	sliderB4.addEventListener('click', () => {
+		var a = $(".switch4 input:checked").before();
+		if (a == undefined) {
+			var sumTicket = parseInt(price4.innerText) + sumBagage4;
+			price4.innerText = String(sumTicket);
+			price4.innerHTML += '  &#8381;';
+		}
+		else {
+			var sumTicket = parseInt(price4.innerText) - sumBagage4;
+			price4.innerText = String(sumTicket);
+			price4.innerHTML += '  &#8381;';
+		}
+	});
+	knopkaClose.addEventListener('click', () => {
+		blogPutin.classList.add('visible');
+		blogPutin2.classList.add('visible');
+		knopkaOpen.classList.add('visible');
+	});
+
+</script>
+</body>
+</html>
