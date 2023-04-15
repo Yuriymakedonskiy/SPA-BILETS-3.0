@@ -40,6 +40,35 @@ body {
     }
 }
 
+.hrBan{
+    margin-bottom: 30px;
+    margin-top: -4px
+}
+
+@media only screen and (max-device-width: 767px) and (min-device-width: 590px){
+.logotype,.textBanner{
+    /* padding: 15px 0px; */
+    margin-left: -50px;
+}
+
+.upSite{
+    margin-left: -100px;
+}
+
+.hrBan hr{
+    /* width: 100%; */
+    /* margin-left: 0px; */
+    /* margin-block-start: 0px; */
+    /* unicode-bidi: isolate;
+    margin-block-end: 0em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    overflow: hidden; */
+} 
+}
+
+
+
 
 #GalHeader h4 {
     padding: 60px 0px 30px 0px;
@@ -301,6 +330,15 @@ body {
     .bilet {
         padding: 45px 0px 5px 9px;
         margin-left: 17px;
+    }
+}
+.probeli{
+    display: none;
+}
+
+@media only screen and (max-device-width: 929px) {
+    .probeli{
+        display: block;
     }
 }
 
@@ -830,12 +868,20 @@ h6 {
 
 
 
+.fire{
+    width: 50px;
+}
 
-
-@media only screen and (max-device-width: 575px) and (min-device-width: 450px) {
+@media only screen and (max-device-width: 575px) and (min-device-width: 50px) {
+    .presidZag{
+        margin-bottom: -90px;
+    }
+    .fire{
+        width: 30px;
+    }
     #GalHeader h4 {
         font-size: 20px;
-        text-align: center;
+        /* text-align: center; */
 
     }
     .blocksOne,.blocksTwo ,.blocksThird, .blocksFifth,.blocksSixth{
@@ -1179,7 +1225,7 @@ footer h5 {
     .SocNet1 {
         display: block;
     }
-
+    
     .SocNet2 {
         display: none;
     }
