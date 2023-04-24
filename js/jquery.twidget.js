@@ -429,7 +429,7 @@
                         $(document).find('.datepicker tbody').removeClass('with-return-button');
                         //dateReturn.focus();
                         $(document).find('.datepicker tbody .datepicker-cancel-return-date').parent().remove();
-                        $(document).find('.datepicker tbody').append('<tr><td class="datepicker-cancel-return-date">'+_this.settings.localization.datepicker_return_ticket_caption+'</td></tr>');
+                        // $(document).find('.datepicker tbody').append('<tr><td class="datepicker-cancel-return-date">'+_this.settings.localization.datepicker_return_ticket_caption+'</td></tr>');
                         $(document).find('.datepicker tbody').addClass('with-return-button');
                         $(document).find('.datepicker-cancel-return-date').click(function(){
                             iconReturnDel.click()
@@ -860,10 +860,27 @@
             const Open1 = document.querySelector('.Open1 a');
             const Open2 = document.querySelector('.Open2 a');
             const Open3 = document.querySelector('.Open3 a');
+            const cityIn = document.querySelectorAll('.cityIn');
+            const cityIn1 = document.querySelector('.cityIn');
+
             butTwidget.addEventListener('click', () => {
-                Open1.classList.remove('visible');
-                Open2.classList.remove('visible');
-                Open3.classList.remove('visible');
+                if (cityIn1.innerText == "Нефтеюганск") {
+                    Open2.classList.remove('visible');
+                    Open3.classList.remove('visible');
+                }
+                else if (cityIn1.innerText == "Нижневартовск") {
+                    Open1.classList.remove('visible');
+                    Open3.classList.remove('visible');
+                }
+                else if (cityIn1.innerText == "Ханты-Мансийск") {
+                    Open1.classList.remove('visible');
+                    Open2.classList.remove('visible');
+
+                }
+                
+                // Open1.classList.remove('visible');
+                // Open2.classList.remove('visible');
+                // Open3.classList.remove('visible');
 
                 var a = container.find('.twidget-pseudo-input').click(function(){
                     $(this).parent().find('input[type="text"]').select();
@@ -925,7 +942,6 @@
             '            <!--flight tab content-->'+
             '            <div id="twidget-tab1" class="twidget-tab active">'+
             '                <div class="clearfix"></div>'+
-            // VOT ONA SUCHKA YATOGOROT
             // '                <h1>'+ _this.settings.localization.avia_submit_domain + '" method="get" autocomplete="off"  + '</h1>'+
             '                <form>'+
             '                    <ul class="twidget-form-list clearfix">'+

@@ -54,17 +54,6 @@ body {
 .upSite{
     margin-left: -100px;
 }
-
-.hrBan hr{
-    /* width: 100%; */
-    /* margin-left: 0px; */
-    /* margin-block-start: 0px; */
-    /* unicode-bidi: isolate;
-    margin-block-end: 0em;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-    overflow: hidden; */
-} 
 }
 
 
@@ -510,7 +499,7 @@ h6 {
 
 
 .blocksOne {
-    background: url(/images/olga-nayda-NhCcPAp-pCI-unsplash\ 1.png) center/100% no-repeat;
+    background: url(/images/Ханты.jpg) center/100% no-repeat;
     color: #fff;
     padding: 370px 0px 0px 20px;
     height: 565px;
@@ -520,7 +509,7 @@ h6 {
 
 .blocksTwo {
     
-    background: #fff url(/images/alaksiej-carankievic-4-1klNmnNrI-unsplash\ 1.png) center/100% no-repeat;
+    background: #fff url(/images/Сургут.jpg) center/100% no-repeat;
     color: #fff;
     padding: 350px 0px 0px 20px;
     height: 566px;
@@ -529,7 +518,7 @@ h6 {
 }
 
 .blocksThird {
-    background: #fff url(/images/Omsk.jpg) center/100% no-repeat;
+    background: #fff url(/images/Когалым.jpg) center/100% no-repeat;
     color: #fff;
     padding: 370px 0px 0px 20px;
     height: 565px;
@@ -625,7 +614,7 @@ h6 {
     border-radius: 15px;
 }
     .blocksOne {
-        background: #fff url(/images/olga-nayda-NhCcPAp-pCI-unsplash\ 1.png) center/100% no-repeat;
+        background: #fff url(/images/Ханты.jpg) center/100% no-repeat;
         color: #fff;
         padding: 345px 0px 0px 20px;
         height: 565px;
@@ -633,7 +622,7 @@ h6 {
     }
 
     .blocksTwo {
-        background: #fff url(/images/alaksiej-carankievic-4-1klNmnNrI-unsplash\ 1.png) center/100% no-repeat;
+        background: #fff url(/images/Сургут.jpg) center/100% no-repeat;
         color: #fff;
         padding: 345px 0px 0px 20px;
         height: 565px;
@@ -642,7 +631,7 @@ h6 {
     }
 
     .blocksThird {
-        background: #fff url(/images/Omsk.jpg) center/100% no-repeat;
+        background: #fff url(/images/Когалым.jpg) center/100% no-repeat;
         color: #fff;
         padding: 345px 0px 0px 20px;
         height: 565px;
@@ -713,7 +702,7 @@ h6 {
 @media only screen and (min-device-width: 1700px) {
     
     .blocksOne {
-        background: #fff url(/images/olga-nayda-NhCcPAp-pCI-unsplash\ 1.png) center/100% no-repeat;
+        background: #fff url(/images/Ханты.jpg) center/100% no-repeat;
         color: #fff;
         padding: 400px 0px 0px 20px;
         height: 565px;
@@ -721,7 +710,7 @@ h6 {
     }
 
     .blocksTwo {
-        background: #fff url(/images/alaksiej-carankievic-4-1klNmnNrI-unsplash\ 1.png) center/100% no-repeat;
+        background: #fff url(/images/Сургут.jpg) center/100% no-repeat;
         color: #fff;
         padding: 400px 0px 0px 20px;
         height: 565px;
@@ -730,7 +719,7 @@ h6 {
     }
 
     .blocksThird {
-        background: #fff url(/images/Omsk.jpg) center/100% no-repeat;
+        background: #fff url(/images/Когалым.jpg) center/100% no-repeat;
         color: #fff;
         padding: 400px 0px 0px 20px;
         height: 565px;
@@ -1229,9 +1218,13 @@ footer h5 {
     .SocNet2 {
         display: none;
     }
-
+    
 }
-
+/* @media only screen and (max-device-width: 757px) {
+    .blog-slider-ticket {
+        height: 500px;
+    }
+} */
 @media only screen and (min-device-width: 1200px) {
     .SocNet1 {
         display: none;
@@ -1445,20 +1438,28 @@ footer h4:hover {
 }
 
 @media only screen and (max-device-width: 800px){
+    .popupBuy{
+        /* background: #fff; */
+        position: fixed;
+        width: 100%;
+        z-index: 222;
+        /* height: 100%; */
+        top: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.3);
+        transition: all 1.5s ease;
+    }
     .popup__containerInfo{
-        position:absolute;
-        top: 0%;
-        left: 25%;
-        /* transform: translate(50%, 0%); */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         background: #fff;
-        border-radius: 0px;
-        
-        /* width: 100%; */
-        height: 100%;
-        /* border: 1px solid #000; */
-        border-top: none;
-        /* text-align: center; */
-        max-width: 470px;    }
+        border-radius: 20px;
+        height: 500px;
+        max-width: 500px;
+        min-width: 400px;
+    }
 } 
 
 
@@ -1473,7 +1474,11 @@ footer h4:hover {
     }
 }
 
-
+@media only screen and (max-device-width: 928px){
+.delTextAvia{
+    display: none;
+}
+}
 
 .cityInput{
     padding: 10px;

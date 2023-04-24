@@ -167,6 +167,10 @@
 .TicketNone,.TicketDate,.flightDurationNone{
   display: none;
 }
+.TicketDate{
+  margin-top: -40px;
+}
+
 .TicketBlogBlue{
  height: 380px;
  margin-top: 40px;
@@ -177,29 +181,50 @@
 /* box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2); */
   padding: 40px 50px;
 }
+.switch{float: left;}
+.aa h4{padding-left: 60px;}
+
 
 @media screen and (max-width: 928px) {
   .TicketBlogBlue{
-   height: 370px;
-   margin-top: 40px;
+   height: auto;
+   margin-top: 99px;
   }
   .depart{
     display: none;
   }
  
  .TicketDate{
-  float: right;border-left: 1px solid yellow;
+  float: right;
+  border-left: 1px solid yellow;
  }
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 655px) {
+    .TicketDate{
+      margin-top: -40px;
+      margin-bottom: -30px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .bagage{
+      /* margin-top: -200px; */
+    }
     .TicketDate{
       float: none;
-      border-left: none;
+      border-right: 1px solid yellow;
+
+      /* border-left: none; */
       /* margin-left: -30px; */
-      margin: 10px 0px 20px -30px;
+      /* margin: 10px 0px 20px -30px; */
     }
+    
+    .Hakasiya{
+      margin-top: -20px;
+    }
+    
     .TicketBlogBlue{
-      height: 470px;
-      margin-top: 40px;
+      /* text-align: center; */
+      height: auto;
+      margin-top: 60px;
     }
   }
     
