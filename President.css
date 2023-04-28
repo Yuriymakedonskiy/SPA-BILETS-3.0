@@ -1,36 +1,16 @@
-/* ШРИФТЫ */
- /* @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800"); */
-/* * { */
-  /* box-sizing: border-box; */
-/* } */
-
-/* блок галерея */
-/* nth-child(3) */
 .blog-slider{
-  /* width: 95%; */
-  /* position: relative; */
-  /* max-width: 800px; */
   margin: auto;
-  /* background: #fff; */
-  /* box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2); */
-  /* padding: 25px; */
-  /* border-radius: 25px; */
-  /* height: 400px; */
-  /* transition: all 0.3s; */
   z-index: -2;
-  /* background-color: aqua; */
 }
 .blog-slider:nth-child(3) {
     width: 95%;
     position: relative;
     max-width: 800px;
     margin: auto;
-    /* background: #fff; */
     box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
     padding: 25px;
     border-radius: 25px;
     height: 400px;
-    /* transition: all 0.3s; */
     z-index: -2;
     background-color: aqua;
   }
@@ -40,7 +20,7 @@
   .blog-slider {
     min-height: 500px;
     height: auto;
-    margin: 180px auto 180px auto;
+    margin: 180px auto 100px auto;
   }
 
   .probels{
@@ -118,22 +98,17 @@
   width: 300px;
   flex-shrink: 0;
   height: 355px;
-  /* background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%); */
   box-shadow: 0px 0px 40px rgba(255, 255,255, 0.4);
   border-radius: 20px;
   transform: translateX(-80px);
   overflow: hidden;
-
- 
 }
 .blog-slider__img:after {
-  /* content: ""; */
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  /* background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%); */
   border-radius: 20px;
   opacity: 0;
 }
@@ -177,8 +152,6 @@
  background-color: #2E5DD1;
  color: #fff;
  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
-
-/* box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2); */
   padding: 40px 50px;
 }
 .switch{float: left;}
@@ -188,7 +161,6 @@
 @media screen and (max-width: 928px) {
   .TicketBlogBlue{
    height: auto;
-   margin-top: 99px;
   }
   .depart{
     display: none;
@@ -205,41 +177,25 @@
       padding-top: 20px;
       padding-bottom: 20px;
     }
-    .bagage{
-      /* margin-top: -200px; */
-    }
     .TicketDate{
       float: none;
       border-right: 1px solid yellow;
-
-      /* border-left: none; */
-      /* margin-left: -30px; */
-      /* margin: 10px 0px 20px -30px; */
     }
-    
     .Hakasiya{
       margin-top: -20px;
     }
-    
     .TicketBlogBlue{
-      /* text-align: center; */
       height: auto;
       margin-top: 60px;
     }
   }
-    
 
 .TicketDate,.TicketNone,.flightDurationNone{
   display: block;
 }
  
   .blog-slider__img img{
-    
     object-position: top;
-    /* object-fit: top; */
-    /* overflow-y: 50%; */
-    /* aspect-ratio: auto 185 / 612; */
-    /* height: 612px; */
   }
 
   .blog-slider-ticket{
@@ -248,22 +204,12 @@
 .blog-slider__img h1,.blog-slider__img h5, .blog-slider__img .aa{
   padding-left: 30px;
 }
-
   .TicketBlock{
     display: none;
   }
-
   .blog-slider__img {
     transform: translateY(-30%);
     width: 90%;
-
-    /* box-sizing: inherit; */
-    /* object-position: top; */
-    /* object-fit: cover; */
-    /* object-fit: top; */
-    /* overflow-y: 50%; */
-    /* aspect-ratio: auto 185 / 612; */
-    /* height: 612px; */
   }
 }
 @media screen and (max-width: 576px) {
@@ -286,7 +232,13 @@
     text-align: center;
     padding: 0 30px;
   }
-}
+} 
+ 
+@media screen and (max-width: 928px) {
+  .blog-slider__item .swiper-slide {
+    height: 90px;
+  }
+} 
 
 @media screen and (max-width: 576px) {
   .blog-slider__content {
@@ -411,24 +363,6 @@
   height: 30px;
   box-shadow: 0px 0px 20px rgba(252, 56, 56, 0.3);
 }
-/* @media screen and (max-width: 768px) {
-  .blog-slider__pagination .swiper-pagination-bullet-active {
-    height: 11px;
-    width: 30px;
-  }
-} */
-
-/*# sourceMappingURL=style.css.map */
-/* .blog-slider__item .swiper-slide {
-    display: none;
-} */
-
-/* .blog-slider__item:nth-child(2) {
-    display: none;
-}
-.blog-slider__item:nth-child(3) {
-    display: none;
-} */
 
 .a{
 background-color: #fefefe;
@@ -436,15 +370,10 @@ width: 100%;
 position: relative;
 max-width: 800px;
 margin: auto;
-/* background: #fff; */
-/* box-shadow: 0px 0px 40px rgba(252, 56, 56, 0.4); */
-
 box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
 padding: 25px 0px 40px 0px;
 border-radius: 25px;
-/* height: 440px; */
 transition: all 0.3s;
-/* z-index: -2; */
 }
 
 .aMargin{
@@ -461,7 +390,6 @@ transition: all 0.3s;
 }
 
 .OpenTicket a{
-/* width: 200px; */
 color: #fff;
 text-decoration: none;
 }
@@ -478,23 +406,13 @@ text-decoration: none;
   font-size: 15px;
 }
 
-.buyTicket{
-  /* max-width: 400px; */
-  /* width: 40%; */
-}
-
-
 #qwe {
   transform:scale(1.5);
   opacity:0.9;
   cursor:pointer;
   margin-right: 5px;
   margin-top: 5px;
-  /* margin-top: -100px; */
   }
-
-  /* The switch - the box around the slider */
-  /* .switch1,.switch2,.switch3,.switch4 */
 .switch {
   position: relative;
   display: inline-block;
@@ -502,10 +420,7 @@ text-decoration: none;
   height: 24px;
 }
 
-/* Hide default HTML checkbox */
 .switch input {display:none;}
-
-/* The slider */
 .slider {
   position: absolute;
   cursor: pointer;

@@ -865,6 +865,7 @@
 
             butTwidget.addEventListener('click', () => {
                 if (cityIn1.innerText == "Нефтеюганск") {
+                    
                     Open2.classList.remove('visible');
                     Open3.classList.remove('visible');
                 }
@@ -875,6 +876,10 @@
                 else if (cityIn1.innerText == "Ханты-Мансийск") {
                     Open1.classList.remove('visible');
                     Open2.classList.remove('visible');
+                }else{
+                    Open1.classList.remove('visible');
+                    Open2.classList.remove('visible');
+                    Open3.classList.remove('visible');
 
                 }
                 

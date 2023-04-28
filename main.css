@@ -180,6 +180,25 @@ body {
 
 }
 
+.SamiyDesh{
+    color: #fff;
+    text-decoration: none;
+    background: linear-gradient(109.6deg, rgb(250, 4, 4) 11.2%, rgb(250, 20, 4) 51.2%, rgb(250, 25, 4) 98.6%);
+    width: 100%;
+    border-radius:0 0  20px 20px;
+    font-size: 20px;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    padding: 10px 20px 10px 20px;
+    cursor: default;
+}
+
+.SamiyDesh:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
 .bilet {
     float: left;
     min-width: 20px;

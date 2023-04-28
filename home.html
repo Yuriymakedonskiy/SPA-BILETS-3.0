@@ -80,9 +80,10 @@
 					<img id="men" src="/images/Самолет.png" alt="l">
 				</div>
 			</div>
-
+			
 			<div class="row textBanner">
 				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-8" style="z-index: 2;">
+					
 					<h2 id="info">Дешёвые авиабилеты из Нижневартовска от 4 500
 						рублей, Информация о перелётах</h2>
 				</div>
@@ -94,11 +95,13 @@
 		</div>
 	</div>
 	<center>
+		
 	<div class="twidCenter">
-			<div class="twidget-container" id="twidget"></div>
-			<div class="blog-slider slider1 visible " style="text-align: start;">
-				<div class="aMargin">
-					<div class="a">
+		
+		<div class="twidget-container" id="twidget"></div>
+		<div class="blog-slider slider1 visible " style="text-align: start;">
+			<div class="aMargin">
+				<div class="a">
 						<div class="blog-slider__wrp swiper-wrapper  TicketBlogNone ">
 							<div class="blog-slider-ticket" style="margin-top: -20px;">
 								<div class="blog-slider__item swiper-slide">
@@ -187,6 +190,9 @@
 											<a class="">КУПИТЬ БИЛЕТ</a>
 										</div>
 									</div>
+								</div>
+								<div href="" style="text-align: center; text-decoration: none;" class="btn-itd btn-lg d-flex justify-content-center">
+									<a class="SamiyDesh">САМЫЙ ДЕШЕВЫЙ</a>
 								</div>
 							</div>
 							
@@ -314,7 +320,7 @@
 						</div>
 
 						<div class="blog-slider__button OpenBlogs">
-							<a class="">ДАЛЕЕ</a>
+							<!-- <a class="">ДАЛЕЕ</a> -->
 						</div>
 					</div>
 				</div>
@@ -403,7 +409,7 @@
 <br>
 <br>
 <br><div class="">
-	<div class="a aNone visible">
+	<div class="a aNone ">
 		<div class="blog-slider__item swiper-slide">
 			<div class="blog-slider__img">
 				<img src="images/Нв.jpg" alt="">
@@ -508,7 +514,7 @@
 	<br>
 </div>
 <div class="">
-	<div class="a aNone2 visible">
+	<div class="a aNone2 ">
 		<div class="blog-slider__item swiper-slide">
 			<div class="blog-slider__img">
 				<img src="images/Ханты-Мансийск.jpeg" alt="">
@@ -644,12 +650,13 @@
 				</div>
 			</div>
 			<div class="NavFoot country col-5 offset-1 offset-sm-1 offset-md-0 col-sm-4 col-md-4 col-xl-3">
-				<h4 style="cursor:default;">Лучшие страны</h4>
+				<h4 style="cursor:default;">Города</h4>
 				<div class="FontWeight500">
-					<h4>Казахстан</h4>
-					<h4>Узбекистан</h4>
-					<h4>Беларусь</h4>
-					<h4>Грузия</h4>
+					<h4>Белоярский</h4>
+					<h4>Когалым</h4>
+					<h4>Нефтеюганск</h4>
+					<h4>Нижневартовск</h4>
+					<h4>Нягань</h4>
 				</div>
 			</div>
 
@@ -683,18 +690,19 @@
 			</div>
 
 			<div class="NavFoot city offset-1 offset-sm-0 col-5 col-sm-3 col-md-4 col-lg-4 col-xl-3">
-				<h4 style="cursor:default;">Лучшие города</h4>
+				<h4 style="cursor:default;">Авиакомпании</h4>
 				<div class="FontWeight500">
-					<h4>Москва</h4>
-					<h4>Адлер</h4>
-					<h4>Лондон</h4>
-					<h4>Бишкек</h4>
+					<h4>Utair</h4>
+					<h4>Аэрофлот</h4>
+					<h4>Победа</h4>
+					<h4>S7 Airlines</h4>
+					<h4>Smartavia</h4>
 				</div>
 			</div>
 
 			<div class="col-3 col-sm-12 col-md-4 col-lg-4 col-xl-3">
 				<div class="SocNet2">
-					<h4>Наши Социальные сети</h4>
+					<h4>Наши социальные сети</h4>
 					<div class="centered" style="font-size: 35px;margin: -20px 50px 0px 0px; text-align: center;">
 						<img src="/images/Telegram App.svg" alt="">
 						<img src="/images/Twitter.svg" alt="">
@@ -739,7 +747,7 @@
 		<select class="js-selectize" name="city">
 			<option value="">Нижневартовск</option>
 		</select>
-		<button type="submit" class="regist begin">Продолжить</button>
+		<button type="button" class="regist begin">Продолжить</button>
 	</div>
 </div>
 
@@ -818,7 +826,7 @@
 						<input type="email" class="emailF emailValue" placeholder="Введите почту" name="textReq"
 							style="margin-bottom: 20px;" required>
 						<!-- <br> -->
-					<button type="submit" class="buy send " style="margin-bottom: 20px;">ОПЛАТИТЬ</button>
+					<button type="button" class="buy send " style="margin-bottom: 20px;">ОПЛАТИТЬ</button>
 				</form>
 			</div>
 		</div>
@@ -1498,12 +1506,6 @@ var clock = ('0' + myDate.getHours()).slice(-2)+ ':' + ('0' + myDate.getMinutes(
 	});
 	Open3.addEventListener('click', () => {
 		Ticket3.classList.remove('visible');
-	});
-
-	knopkaClose.addEventListener('click', () => {
-		blogPutin.classList.add('visible');
-		blogPutin2.classList.add('visible');
-		knopkaOpen.classList.add('visible');
 	});
 
 </script>
